@@ -48,8 +48,9 @@
 }
 
 .section__block{
-  @include flex();
-  margin-top: $m-5;
+  @include flex2 ();
+
+  margin: $m-2 0;
 
   &_price{
       font-weight: $font-w-700;
@@ -150,6 +151,10 @@
       }
     }
   }
+}
+
+.test { 
+  align-items: baseline;
 }
 
 

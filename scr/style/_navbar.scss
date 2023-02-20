@@ -27,7 +27,7 @@
         text-align: center;
       }
 
-      &_decoration{
+      &_nodecoration{
         text-decoration: none;
         font-weight: $font-w-500;
         font-size: $font-14;
@@ -93,7 +93,6 @@
   }
 
   &__item{
-    width: calc(100% / 3);
     padding: $p-2;
     text-align: center;
     cursor: pointer;

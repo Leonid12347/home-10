@@ -216,7 +216,6 @@ a {
   text-decoration: none;
 }
 .navbar2__item {
-  width: 33.3333333333%;
   padding: 2rem;
   text-align: center;
   cursor: pointer;
@@ -318,11 +317,6 @@ a {
   transition: all 0.3s;
 }
 
-.list-image:hover {
-  box-shadow: 0 6px 5px var(--shadow);
-  transform: translateY(-5px);
-}
-
 .header {
   height: 168px;
   width: 100%;
@@ -377,8 +371,8 @@ a {
 .section__block {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 5rem;
+  align-items: baseline;
+  margin: 2rem 0;
 }
 .section__block_price {
   font-weight: 700;
@@ -464,6 +458,10 @@ a {
 }
 .section2-inst__lists_list {
   margin: 0.5rem;
+}
+
+.test {
+  align-items: baseline;
 }
 
 .footer {
