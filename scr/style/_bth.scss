@@ -1,0 +1,42 @@
+.bth-top {
+  width:459px;
+  height:56px;
+  background-color: $color-gray;
+  border-radius: 60px;
+
+  color: $color-gray;
+
+  text-align: left;
+  
+  &__glass {
+    padding-left: $p-23;
+  }
+}
+
+.button {
+  max-width: 1280px;
+
+  text-align: center;
+  margin: $m-2 auto;
+
+  &__btn {
+      background-color: $color-gray-3;
+      width: 220px;
+      height: $font-46;
+      border: 1px solid $color-white;
+      border-radius: $font-28;
+      text-align: center;
+      font-weight: $font-w-500;
+
+  }
+  &__btn:hover {
+      background-color: $color-yellow;
+      width: 240px;
+      height: $font-46;
+      border: 1px solid $color-yellow;
+      border-radius: $font-28;
+      text-align: center;
+      font-weight: $font-w-700;
+
+  }
+}

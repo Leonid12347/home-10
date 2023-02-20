@@ -1,0 +1,128 @@
+.navbar1{
+  position: relative;
+  margin-left: 88px;
+  align-items: center;
+
+  &__lists{
+    @include flex();
+    justify-content: start;
+    align-items: start;
+  }
+
+  &__list{
+    padding-right: $p-1-5;
+    list-style: none;
+  }
+
+  &__link{
+    color: $color-white;
+    font-size: $font-14;
+
+      &_select{
+        border-radius: 31px;
+        color: $color-white;
+        background-color: $color-blye ;
+        font-weight: $font-w-400;
+        font-size: $font-14;
+        text-align: center;
+      }
+
+      &_nodecoration{
+        text-decoration: none;
+        font-weight: $font-w-500;
+        font-size: $font-14;
+        padding: $p-1;
+
+      &:hover {
+        color: $color-blye;
+        font-size: $font-14;
+        }  
+      }
+
+
+      &_gray{
+        color: $color-gray-1;
+        
+        &:hover {
+          text-decoration: underline 4px;
+          }
+      }
+  }
+}
+
+.navbar2{
+  position: relative;
+  margin-left: 88px;
+
+  &__lists{
+      @include flex();
+  }
+
+  &__list{
+    padding-right: $p-1-5;
+    padding-left: $p-1-5;
+    list-style: none;
+      
+      &_categories{
+        @include flex();
+        width: 148px;
+        height: 46px;
+        border-radius: 8px;
+        background-color: $color-yellow;
+      }
+  }
+
+  &__link{
+    color: $color-white;
+    font-size: $font-14;
+    text-decoration: none;
+
+      &_categories{
+        font-weight: $font-w-500;
+        font-size: $font-18;
+        color: $color-black;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      &_photomarket{
+        font-weight: $font-w-500;
+        font-size: $font-26;
+        text-decoration: none;
+      }
+  }
+
+  &__item{
+    width: calc(100% / 3);
+    padding: $p-2;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__title{
+    font-size: $font-14;
+    font-weight: $font-w-400;
+  
+    color: $color-white;
+    text-align: center;
+
+    &:hover {
+      color: $color-blye;
+      font-size: $font-14;
+      }  
+  }
+
+}
+
+.textarea{
+  background-color: $color-gray;
+  opacity: 60%;
+  font-weight: $font-w-400;
+  font-size: $font-16;
+  color: $color-white;
+  width: 459px;
+  height: 56px;
+  border-radius: 60px;
+  padding-top: $p-1;
+  padding-left: $p-1;
+}

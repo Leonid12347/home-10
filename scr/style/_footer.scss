@@ -1,0 +1,97 @@
+.footer {
+  @include flex();
+  background-color: $color-black;
+ 
+  margin: auto;
+
+  &-column1, &-column2, &-column3 {
+      
+      &__lists {
+          padding:$p-1;
+
+          &_link {
+              margin:$m-1;
+          }
+
+          &_link a {
+              color: $color-white;
+              text-align: center;
+              font-weight: $font-w-400;
+              font-size: $font-16;
+          }
+          &_link a:hover {
+              color: $color-blye;
+              text-align: center;
+              font-weight: $font-w-700;
+              font-size: $font-16;
+              transition: all .3s;
+          }
+      }
+  }
+  &-column4 {
+      
+     padding-top: 26px;
+
+      &__lists {
+          height: 150px;                       
+          &_title {
+              color: $color-white;
+              font-weight: $font-w-700;
+              font-size: $font-14;
+              padding: $p-0-5;
+
+          }
+          &_phone a {
+              color: $color-white;
+              font-weight: $font-w-500;
+              font-size: $font-14;
+              padding: $p-0-5;
+          }
+          &_phone a:hover {
+              color: $color-blye;
+              font-weight: $font-w-700;
+              font-size: $font-14;
+              padding: $p-0-5;
+          }
+          &_adress {
+              color: $color-white;
+              font-weight: $font-w-500;
+              font-size: $font-14;
+              padding: $p-0-5;
+          }
+          &_email a {
+              color: $color-white;
+              font-weight: $font-w-500;
+              font-size: $font-14;
+              padding: $p-0-5;
+          }
+          &_email a:hover {
+              color: $color-blye;
+              font-weight: $font-w-700;
+              font-size: $font-14;
+              padding: $p-0-5;
+          }
+      }
+      &__paytype {
+          height: 135px;
+
+          &_title {
+              color: $color-white;
+              font-weight: $font-w-700;
+              font-size: $font-14;
+              padding: $p-0-5;
+          }
+
+          &_lists {
+              @include flex1();
+              padding: $p-0-5;
+
+              &--list {
+                  padding: $p-0;
+                  margin: $m-0;
+                  text-align: left;
+              }
+          }
+      }
+  }
+}

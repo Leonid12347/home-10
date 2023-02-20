@@ -1,0 +1,21 @@
+.swiper {
+    width: 100%;
+    height: auto;
+  
+    &-scrollbar {
+      bottom: 0;
+  
+      &-drag {
+        background-color: $color-gray-2;
+      }
+    }
+  }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $color-black;
+  background-color: $color-gray-2;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}

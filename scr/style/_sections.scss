@@ -1,0 +1,156 @@
+.section-1{
+  margin-top: 31px;
+  margin-bottom: $m-1;
+}
+
+.banner{
+  padding: $p-5;
+  margin-bottom: 30px;
+
+  color: $color-white;
+  border-radius: 8px;
+
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../img/image\ 61.png');
+
+  width: 1280px;
+  height: 360px;
+
+  &__title{
+      font-weight: $font-w-700;
+      font-size: $font-32;
+      color: $color-white;
+      margin-top: 48px;
+      margin-left: 84px;
+      margin-bottom: 22px;
+  }
+
+  &__description{
+      opacity: 60%;
+      font-weight: $font-w-400;
+      font-size: $font-16;
+      color: $color-white;
+      margin-left: 84px;
+      margin-bottom: 42px;
+  }
+
+  &__btn{
+      margin-left: 84px;
+      border: solid 2px $color-yellow;
+      text-decoration: none;
+      padding: $p-1;
+      border-radius: 28px;
+      padding-left: $p-5;
+      padding-right: $p-5;
+      font-weight: $font-w-500;
+      font-size: $font-16;
+      color: $color-yellow;
+  }
+}
+
+.section__block{
+  @include flex();
+  margin-top: $m-5;
+
+  &_price{
+      font-weight: $font-w-700;
+      font-size: $font-18;
+      color: $color-black;
+      margin-top: $m-1;
+      margin-bottom: $m-0-5;
+
+      &--old{
+          font-weight: $font-w-400;
+          font-size: $font-14;
+
+          padding-left: $p-1;
+
+          opacity: 50%;
+          text-decoration: line-through;
+      }
+  }
+
+  &_item{
+      font-weight: $font-w-400;
+      font-size: $font-14;
+      color: $color-black;
+      opacity: 50%;
+  }
+}
+
+.section2{
+  margin: $m-5 auto;
+
+
+
+  &-firms {
+    max-width: 1296px;
+    margin: $m-1;
+    margin: auto;
+
+    &__lists {
+      @include flex1();
+
+      &_list {
+        margin: $m-0-5;
+      }
+    }
+  }
+
+  &-reviews {
+    width: 1120px;
+    margin: auto;
+
+    &__title {
+        font-size: $font-32;
+        font-weight: $font-w-700;
+        margin: $m-1;
+        padding: $p-1;
+    }
+    &__lists {
+        @include flex1();
+        &_list {
+            text-align: center;
+            margin: $m-1;
+
+        }
+        &_list a {
+            text-align: center;
+            color: $color-black;
+
+            margin: $m-1;
+
+        }
+          &_list a:hover {
+            color: $color-yellow;
+            font-weight: $font-w-700;
+
+            margin: $m-1;
+          }
+    }
+  }
+
+  &-inst {
+    max-width: 1120px;
+    margin-top: $m-1;
+    margin: auto;
+
+    &__title {
+      font-weight: $font-w-700;
+      font-size: $font-32;
+      margin: $m-1;
+
+    }
+   
+    &__lists {
+      @include flex();
+      margin: $m-1;
+      
+      &_list {
+        margin: $m-0-5;
+      }
+    }
+  }
+}
+
+
+
